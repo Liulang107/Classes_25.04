@@ -49,7 +49,6 @@ class Duck(Bird):
 
 
 class Milking_Animal(Animal):
-
     def milk(self):
         self.weight -= 2
         Animal.instances[self.name] = self.weight
@@ -74,6 +73,7 @@ hen_2 = Hen('Курица "Кукареку"', 3)
 goat_1 = Goat('Коза "Рога"', 82)
 goat_2 = Goat('Коза "Копыта"', 84)
 duck_1 = Duck('Утка "Кряква"', 2)
+
 
 print('На ферме живут:')
 for k in Animal.instances.keys():
